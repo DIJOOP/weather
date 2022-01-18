@@ -1,7 +1,7 @@
 function fetchData(){
     console.log("mdnzsnd");
     let place=place_Name.value
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=6fa99e1f96f024f79970c5a3532b2ac6&units=metric`)
+   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=6fa99e1f96f024f79970c5a3532b2ac6&units=metric`)
     .then(res=>{
         if(res.ok){
             return res.json()
